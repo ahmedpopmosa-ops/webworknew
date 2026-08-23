@@ -137,13 +137,11 @@ export default function MainLayout() {
             >
               {language === 'en' ? 'عربي' : 'EN'}
             </button>
-            {user ? (
+            {user && (
               <>
                 <Link to="/admin" className="text-sm font-bold text-slate-300 hover:text-white magnetic">{t('nav.dashboard')}</Link>
                 <button onClick={logout} className="text-sm font-bold text-red-400 hover:text-red-300 magnetic">{t('nav.logout')}</button>
               </>
-            ) : (
-              <Link to="/admin/login" className="text-sm font-bold text-slate-400 hover:text-white magnetic">{t('nav.login')}</Link>
             )}
             <Link to="/contact" className="bg-white text-slate-950 px-6 py-3 rounded-full text-sm font-bold hover:bg-blue-600 hover:text-white transition-all transform hover:scale-105 active:scale-95 magnetic">
               {t('nav.startProject')}
