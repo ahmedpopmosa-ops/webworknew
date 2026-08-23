@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://webwork-eg.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webwork-eg.com/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webwork-eg.com/ar/" />
+  </url>
+  <url>
+    <loc>https://webwork-eg.com/services</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webwork-eg.com/services" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webwork-eg.com/ar/services" />
+  </url>
+  <url>
+    <loc>https://webwork-eg.com/portfolio</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webwork-eg.com/portfolio" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webwork-eg.com/ar/portfolio" />
+  </url>
+  <url>
+    <loc>https://webwork-eg.com/blog</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webwork-eg.com/blog" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webwork-eg.com/ar/blog" />
+  </url>
+  <url>
+    <loc>https://webwork-eg.com/blog/professional-web-design-services</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webwork-eg.com/ar/blog/professional-web-design-services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://webwork-eg.com/blog/professional-web-design-services" />
+  </url>
+  <url>
+    <loc>https://webwork-eg.com/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webwork-eg.com/contact" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webwork-eg.com/ar/contact" />
+  </url>
+  
+  <!-- Arabic URLs -->
+  <url>
+    <loc>https://webwork-eg.com/ar/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webwork-eg.com/ar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://webwork-eg.com/" />
+  </url>
+  <url>
+    <loc>https://webwork-eg.com/ar/services</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webwork-eg.com/ar/services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://webwork-eg.com/services" />
+  </url>
+  <url>
+    <loc>https://webwork-eg.com/ar/portfolio</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webwork-eg.com/ar/portfolio" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://webwork-eg.com/portfolio" />
+  </url>
+  <url>
+    <loc>https://webwork-eg.com/ar/blog</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webwork-eg.com/ar/blog" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://webwork-eg.com/blog" />
+  </url>
+  <url>
+    <loc>https://webwork-eg.com/ar/blog/professional-web-design-services</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webwork-eg.com/ar/blog/professional-web-design-services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://webwork-eg.com/blog/professional-web-design-services" />
+  </url>
+  <url>
+    <loc>https://webwork-eg.com/ar/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://webwork-eg.com/ar/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://webwork-eg.com/contact" />
+  </url>
+</urlset>

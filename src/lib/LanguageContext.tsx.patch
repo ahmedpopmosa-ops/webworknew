@@ -1,0 +1,12 @@
+--- src/lib/LanguageContext.tsx
++++ src/lib/LanguageContext.tsx
+@@ -107,7 +107,9 @@
+ 
+ export function LanguageProvider({ children }: { children: ReactNode }) {
+-  const [language, setLanguage] = useState<Language>('en');
++  const isArabic = typeof window !== 'undefined' && window.location.pathname.startsWith('/ar');
++  const [language, setLanguage] = useState<Language>(isArabic ? 'ar' : 'en');
+   const dir = language === 'ar' ? 'rtl' : 'ltr';
+ 
+   useEffect(() => {
+     document.documentElement.dir = dir;

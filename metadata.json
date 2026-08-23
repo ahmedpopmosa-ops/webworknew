@@ -1,0 +1,6 @@
+{
+  "name": "Webwork AI Digital Agency Platform",
+  "description": "A premium digital agency platform for WEBWORK with a WordPress-like CMS, powered by AI for SEO content generation, built on React, Node.js, and PostgreSQL.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
