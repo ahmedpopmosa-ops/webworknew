@@ -93,13 +93,13 @@ export function LegacyInteractiveServices({ content, settings }: any) {
     { slug: 'digital-marketing', title: 'Digital Marketing', desc: 'SEO and performance marketing.', num: '02', img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop' },
     { slug: 'seo-optimization', title: 'SEO Optimization', desc: 'Rank higher on Google.', num: '03', img: 'https://images.unsplash.com/photo-1572177191856-3cbde618072f?q=80&w=800&auto=format&fit=crop' },
     { slug: 'mobile-apps', title: 'Mobile Apps', desc: 'Native and cross-platform applications.', num: '04', img: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=800&auto=format&fit=crop' },
-    { slug: 'branding', title: 'Branding', desc: 'Brand identity and visual design.', num: '05', img: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=800&auto=format&fit=crop' },
-    { slug: '360-vr', title: '360 VR', desc: 'Immersive 360-degree virtual reality experiences.', num: '06', img: 'https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?q=80&w=800&auto=format&fit=crop' },
-    { slug: 'marketing-strategy', title: 'Marketing Strategy', desc: 'Data-driven marketing plans.', num: '07', img: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop' },
-    { slug: 'content-creation', title: 'Content Creation', desc: 'Engaging content for all platforms.', num: '08', img: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop' },
-    { slug: 'media-buying', title: 'Media Buying & SEM', desc: 'Targeted ad campaigns and media planning.', num: '09', img: 'https://images.unsplash.com/photo-1432888622747-4eb9a8f2c293?q=80&w=800&auto=format&fit=crop' },
+    { slug: 'branding', title: 'Branding', desc: 'Brand identity and visual design.', num: '05', img: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop' },
+    { slug: 'motion-graphic', title: 'Motion Graphic', desc: 'Stunning animations and dynamic video visuals.', num: '06', img: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop' },
+    { slug: 'marketing-strategy', title: 'Marketing Strategy', desc: 'Data-driven marketing plans.', num: '07', img: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop' },
+    { slug: 'content-creation', title: 'Content Creation', desc: 'Engaging content for all platforms.', num: '08', img: 'https://images.unsplash.com/photo-1542744094-3a31f272c490?q=80&w=800&auto=format&fit=crop' },
+    { slug: 'media-buying', title: 'Media Buying & SEM', desc: 'Targeted ad campaigns and media planning.', num: '09', img: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop' },
     { slug: 'email-marketing', title: 'Email Marketing', desc: 'Automated email campaigns and newsletters.', num: '10', img: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800&auto=format&fit=crop' },
-    { slug: 'motion-graphic', title: 'Motion Graphic', desc: 'Stunning animations and motion graphics.', num: '11', img: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format&fit=crop' },
+    { slug: '360-vr', title: '360 VR', desc: 'Immersive 360-degree virtual reality experiences.', num: '11', img: 'https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?q=80&w=800&auto=format&fit=crop' },
   ];
 
   return (

@@ -16,7 +16,12 @@ export default function Services() {
     { id: 'seo-optimization', title: t('services.3.title'), desc: t('services.3.desc'), num: '03', img: 'https://images.unsplash.com/photo-1572177191856-3cbde618072f?q=80&w=800&auto=format&fit=crop' },
     { id: 'mobile-apps', title: t('services.4.title'), desc: t('services.4.desc'), num: '04', img: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=800&auto=format&fit=crop' },
     { id: 'branding', title: t('services.5.title'), desc: t('services.5.desc'), num: '05', img: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop' },
-    { id: 'motion-graphic', title: t('services.6.title'), desc: t('services.6.desc'), num: '06', img: 'https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?q=80&w=800&auto=format&fit=crop' },
+    { id: 'motion-graphic', title: t('services.6.title'), desc: t('services.6.desc'), num: '06', img: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop' },
+    { id: 'marketing-strategy', title: t('services.7.title'), desc: t('services.7.desc'), num: '07', img: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop' },
+    { id: 'content-creation', title: t('services.8.title'), desc: t('services.8.desc'), num: '08', img: 'https://images.unsplash.com/photo-1542744094-3a31f272c490?q=80&w=800&auto=format&fit=crop' },
+    { id: 'media-buying', title: t('services.9.title'), desc: t('services.9.desc'), num: '09', img: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop' },
+    { id: 'email-marketing', title: t('services.10.title'), desc: t('services.10.desc'), num: '10', img: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800&auto=format&fit=crop' },
+    { id: '360-vr', title: t('services.11.title'), desc: t('services.11.desc'), num: '11', img: 'https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?q=80&w=800&auto=format&fit=crop' },
   ];
 
   useEffect(() => {

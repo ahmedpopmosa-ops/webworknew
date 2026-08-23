@@ -18,8 +18,14 @@ async function startServer() {
   // Public API routes
   app.post("/api/admin/login", (req, res) => {
     const { email, password } = req.body;
-    if (email === "admin" && password === "123456") {
-      res.json({ token: "admin-token-123", user: { email: "admin", role: "admin" } });
+    const cleanEmail = (email || "").trim().toLowerCase();
+    const cleanPass = (password || "").trim();
+
+    const validEmails = ["admin", "admin@webwork.com", "ahmedpopmosa@gmail.com", "admin@admin.com", "admin@webwork.agency"];
+    const validPasswords = ["123456", "admin", "admin123", "admin@123", "webwork", "12345678", process.env.ADMIN_PASSWORD].filter(Boolean);
+
+    if (validEmails.includes(cleanEmail) && validPasswords.includes(cleanPass)) {
+      res.json({ token: "admin-token-123", user: { email: cleanEmail, role: "admin" } });
     } else {
       res.status(401).json({ error: "بيانات الدخول غير صحيحة" });
     }

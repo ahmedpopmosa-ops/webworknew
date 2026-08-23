@@ -54,7 +54,12 @@ const LegacyHome = ({ t, dir }: { t: any, dir: any }) => {
     { slug: 'seo-optimization', title: t('services.3.title'), desc: t('services.3.desc'), num: '03', img: 'https://images.unsplash.com/photo-1572177191856-3cbde618072f?q=80&w=800&auto=format&fit=crop' },
     { slug: 'mobile-apps', title: t('services.4.title'), desc: t('services.4.desc'), num: '04', img: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=800&auto=format&fit=crop' },
     { slug: 'branding', title: t('services.5.title'), desc: t('services.5.desc'), num: '05', img: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop' },
-    { slug: 'motion-graphic', title: t('services.6.title'), desc: t('services.6.desc'), num: '06', img: 'https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?q=80&w=800&auto=format&fit=crop' },
+    { slug: 'motion-graphic', title: t('services.6.title'), desc: t('services.6.desc'), num: '06', img: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop' },
+    { slug: 'marketing-strategy', title: t('services.7.title'), desc: t('services.7.desc'), num: '07', img: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop' },
+    { slug: 'content-creation', title: t('services.8.title'), desc: t('services.8.desc'), num: '08', img: 'https://images.unsplash.com/photo-1542744094-3a31f272c490?q=80&w=800&auto=format&fit=crop' },
+    { slug: 'media-buying', title: t('services.9.title'), desc: t('services.9.desc'), num: '09', img: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop' },
+    { slug: 'email-marketing', title: t('services.10.title'), desc: t('services.10.desc'), num: '10', img: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800&auto=format&fit=crop' },
+    { slug: '360-vr', title: t('services.11.title'), desc: t('services.11.desc'), num: '11', img: 'https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?q=80&w=800&auto=format&fit=crop' },
   ];
 
   const portfolio = portfolioData.slice(0, 10);
@@ -187,7 +192,7 @@ const LegacyHome = ({ t, dir }: { t: any, dir: any }) => {
                     </p>
                     
                     {/* Link to service details */}
-                    <Link to={`/services/${s.slug}`} className="inline-flex items-center gap-2 mt-4 text-blue-500 font-bold hover:text-blue-400 transition-colors uppercase tracking-widest text-sm">
+                    <Link to={dir === 'rtl' ? `/ar/services/${s.slug}` : `/services/${s.slug}`} className="inline-flex items-center gap-2 mt-4 text-blue-500 font-bold hover:text-blue-400 transition-colors uppercase tracking-widest text-sm">
                       {dir === 'rtl' ? 'اكتشف المزيد' : 'Discover More'} {dir === 'rtl' ? <ArrowLeft className="w-4 h-4" /> : <ArrowUpRight className="w-4 h-4" />}
                     </Link>
 
