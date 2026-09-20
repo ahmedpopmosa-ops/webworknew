@@ -2,7 +2,7 @@ import { useParams, Navigate, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '../lib/LanguageContext';
 import { servicesData } from '../data/servicesData';
-import { CheckCircle2, ChevronRight, Phone, Mail, ArrowRight } from 'lucide-react';
+import { CheckCircle2, ChevronRight, Phone, Mail, ArrowRight, MessageCircle } from 'lucide-react';
 import { useEffect } from 'react';
 
 export default function ServiceDetails() {
@@ -203,13 +203,21 @@ export default function ServiceDetails() {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <a href="tel:+20100000000" className="flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-bold transition-all w-full sm:w-auto justify-center">
-              <Phone className="w-5 h-5" />
-              {isAr ? 'اتصل بنا' : 'Call Us Now'}
+            <a 
+              href="https://wa.me/201117087647" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-4 rounded-full font-bold transition-all w-full sm:w-auto justify-center shadow-lg shadow-emerald-950/40 hover:scale-105 active:scale-95"
+            >
+              <MessageCircle className="w-5 h-5" />
+              {isAr ? 'تواصل عبر واتساب' : 'Chat on WhatsApp'}
             </a>
-            <a href="mailto:info@webwork-agency.com" className="flex items-center gap-3 bg-slate-800 hover:bg-slate-700 text-white px-8 py-4 rounded-full font-bold transition-all w-full sm:w-auto justify-center border border-slate-700">
+            <a 
+              href="mailto:info@webwork-eg.com" 
+              className="flex items-center gap-3 bg-slate-800 hover:bg-slate-700 text-white px-8 py-4 rounded-full font-bold transition-all w-full sm:w-auto justify-center border border-slate-700"
+            >
               <Mail className="w-5 h-5" />
-              {isAr ? 'راسلنا عبر البريد' : 'Email Us'}
+              {isAr ? 'راسلنا: info@webwork-eg.com' : 'Email Us'}
             </a>
           </div>
           

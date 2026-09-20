@@ -56,8 +56,7 @@ export function seoMiddleware(req: Request, res: Response, next: NextFunction) {
       "url": "https://webwork-eg.com/",
       "logo": "https://webwork-eg.com/logo.png",
       "description": description || defaultSeo.description,
-      "email": "hello@webwork-eg.com",
-      "telephone": "+20 123 456 789",
+      "email": "info@webwork-eg.com",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Cairo",

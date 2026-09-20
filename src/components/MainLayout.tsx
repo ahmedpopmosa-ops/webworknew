@@ -1,6 +1,6 @@
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../lib/AuthContext.tsx';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, MessageCircle } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import CustomCursor from './CustomCursor.tsx';
@@ -233,8 +233,18 @@ export default function MainLayout() {
             <div>
               <h4 className="text-xs uppercase tracking-widest text-slate-500 mb-6 font-bold">{t('footer.contact')}</h4>
               <ul className="space-y-4 text-slate-300">
-                <li><a href="mailto:hello@webwork-eg.com" className="hover:text-blue-400 transition-colors" dir="ltr">hello@webwork-eg.com</a></li>
-                <li><a href="tel:+20123456789" className="hover:text-blue-400 transition-colors" dir="ltr">+20 123 456 789</a></li>
+                <li><a href="mailto:info@webwork-eg.com" className="hover:text-blue-400 transition-colors" dir="ltr">info@webwork-eg.com</a></li>
+                <li>
+                  <a 
+                    href="https://wa.me/201117087647" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="hover:text-emerald-400 text-emerald-400/90 transition-colors flex items-center gap-2 font-medium"
+                  >
+                    <MessageCircle className="w-4 h-4 text-emerald-400" />
+                    <span>{language === 'ar' ? 'واتساب: تواصل فوري' : 'WhatsApp Chat'}</span>
+                  </a>
+                </li>
                 <li className="text-slate-500">{t('footer.cairo')}</li>
               </ul>
             </div>
@@ -257,6 +267,20 @@ export default function MainLayout() {
           </div>
         </div>
       </footer>
+
+      {/* Floating WhatsApp Quick Action Button */}
+      <a
+        href="https://wa.me/201117087647"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat on WhatsApp"
+        className="fixed bottom-6 right-6 z-50 flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-3.5 rounded-full shadow-2xl shadow-emerald-950/80 transition-all transform hover:scale-105 active:scale-95 group border border-emerald-400/30"
+      >
+        <MessageCircle className="w-6 h-6 fill-white text-emerald-600" />
+        <span className="font-bold text-sm hidden sm:inline-block">
+          {language === 'ar' ? 'تواصل عبر واتساب' : 'Chat on WhatsApp'}
+        </span>
+      </a>
     </div>
   );
 }

@@ -46,6 +46,6 @@ export const portfolioData: PortfolioItem[] = [
   { name: 'Taqa Noor', cat: 'Energy', url: 'https://taqanoor.com/', img: getImage('taqanoor.webp') },
   { name: 'Egyptian Spanish SEO', cat: 'SEO & Marketing', url: 'https://egyptianspanish.com/', img: getImage('egyptianspanish.webp') },
   { name: 'Bremco', cat: 'Engineering / Construction', url: 'https://bremcoeg.com/', img: getImage('bremco.webp') },
-  { name: 'Sun Laser CNC', cat: 'Industrial', url: 'https://sunlasercnc.com/', img: getImage('sunlasercnc.webp') }, // Might be wrong, will check
+  { name: 'Sun Laser CNC', cat: 'Industrial', url: 'https://sunlasercnc.com/', img: getImage('sunlasercnc.webp') },
   { name: 'TTI EG', cat: 'Tech / Corporate', url: 'http://ttieg.com/', img: getImage('ttieg.webp') },
 ];

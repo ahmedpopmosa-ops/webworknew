@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import { useRef, useState, useEffect } from 'react';
 import DynamicPageRenderer from '../components/DynamicPageRenderer.tsx';
+import WhatsAppContactForm from '../components/WhatsAppContactForm.tsx';
 import { RowData } from '../lib/builder-types.ts';
 
 const RevealText = ({ text, className = "" }: { text: string, className?: string }) => {
@@ -334,6 +335,9 @@ const LegacyHome = ({ t, dir }: { t: any, dir: any }) => {
           </div>
         </div>
       </section>
+
+      {/* Instant WhatsApp Inquiry Form */}
+      <WhatsAppContactForm />
       
     </div>
   );
@@ -367,6 +371,7 @@ export default function Home() {
     return (
       <div className="flex flex-col min-h-screen font-sans" dir={dir}>
         <DynamicPageRenderer blocks={pageBlocks} />
+        <WhatsAppContactForm />
       </div>
     );
   }

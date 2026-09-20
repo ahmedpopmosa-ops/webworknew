@@ -5,8 +5,8 @@ export default function AdminSettings() {
   const [loading, setLoading] = useState(false);
   const [settings, setSettings] = useState({
     siteName: 'WEBWORK',
-    contactEmail: 'hello@webwork-eg.com',
-    phoneNumber: '+20 123 456 789',
+    contactEmail: 'info@webwork-eg.com',
+    phoneNumber: '01117087647',
     address: 'Cairo, Egypt',
     facebookUrl: 'https://facebook.com',
     instagramUrl: 'https://instagram.com',
@@ -52,7 +52,7 @@ export default function AdminSettings() {
             <input type="email" name="contactEmail" value={settings.contactEmail} onChange={handleChange} className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500" />
           </div>
           <div>
-            <label className="block text-sm font-bold text-slate-700 mb-2">رقم الهاتف</label>
+            <label className="block text-sm font-bold text-slate-700 mb-2">رقم الواتساب للتواصل</label>
             <input type="text" name="phoneNumber" value={settings.phoneNumber} onChange={handleChange} className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500" />
           </div>
           <div>
