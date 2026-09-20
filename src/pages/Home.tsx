@@ -291,7 +291,8 @@ const LegacyHome = ({ t, dir }: { t: any, dir: any }) => {
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     src={p.img} 
-                    alt={p.name} 
+                    alt={`Screenshot of ${p.name} website`}
+                    loading="lazy"
                     className="w-full h-full object-cover opacity-85 group-hover:opacity-100 transition-opacity"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent" />

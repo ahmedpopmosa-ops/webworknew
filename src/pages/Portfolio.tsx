@@ -58,7 +58,8 @@ export default function Portfolio() {
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
                   src={p.image || p.img} 
-                  alt={p.title || p.name} 
+                  alt={`Screenshot of ${p.title || p.name} website`}
+                  loading="lazy"
                   className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
                 />
               </div>
