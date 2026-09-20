@@ -1,5 +1,6 @@
 import express from "express";
 import path from "path";
+import fs from "fs";
 import { createServer as createViteServer } from "vite";
 import { requireAuth, AuthRequest } from "./src/middleware/auth.ts";
 import { db } from "./src/db/index.ts";
@@ -360,6 +361,28 @@ Disallow: /wp-content/uploads/woocommerce_uploads/
 Allow: /
 
 Sitemap: https://webwork-eg.com/sitemap.xml`);
+  });
+
+  // Google Site Verification file handler
+  app.get("/google:id.html", (req, res, next) => {
+    const filename = `google${req.params.id}.html`;
+    const cwd = process.cwd();
+    const candidatePaths = [
+      path.join(cwd, "public", filename),
+      path.join(cwd, "dist", filename),
+      path.join(cwd, filename)
+    ];
+    for (const p of candidatePaths) {
+      if (fs.existsSync(p)) {
+        res.type("text/html");
+        return res.sendFile(p);
+      }
+    }
+    if (req.params.id === '7a80af93c84e42ad') {
+      res.type("text/html");
+      return res.send(`google-site-verification: google7a80af93c84e42ad.html`);
+    }
+    next();
   });
 
   // Apply SEO middleware for frontend routes

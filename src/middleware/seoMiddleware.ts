@@ -9,8 +9,13 @@ export function seoMiddleware(req: Request, res: Response, next: NextFunction) {
     return next();
   }
 
-  // Only process GET requests for HTML routes (not API or assets)
-  if (req.method !== 'GET' || req.path.startsWith('/api') || req.path.match(/\.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|webp|xml|txt)$/)) {
+  // Only process GET requests for HTML routes (not API, assets, or verification files)
+  if (
+    req.method !== 'GET' || 
+    req.path.startsWith('/api') || 
+    req.path.startsWith('/google') || 
+    req.path.match(/\.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|webp|xml|txt)$/)
+  ) {
     return next();
   }
 
